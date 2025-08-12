@@ -47,7 +47,7 @@ const App = () => {
             <input
               type="text"
               placeholder="eg: Jaipur, Taj Mahal etc.."
-              className="border border-gray-300 rounded-xl px-4 py-2 flex-1 min-w-[180px] outline-none focus:border-orange-500 transition"
+              className="border border-gray-300 rounded-xl px-4 py-2 flex-1 min-w-[300px] outline-none focus:border-orange-500 transition"
             />
             <input
               type="date"
@@ -66,6 +66,31 @@ const App = () => {
         </div>
       </section>
       <div className="h-[8rem]" />
+      <section className='max-w mx-40 m-auto h-100'>
+        <div className='w-full bg-zinc-900 h-full rounded-4xl'>
+          
+        </div>
+      </section>
+      <h1 className='text-orange-500 font-bold text-2xl ml-42 mt-10'>What's New</h1>
+      <section className='flex mt-10 max-w ml-42 mr-42'>
+        <div
+          className='flex gap-6 py-2'
+          style={{
+            overflowX: 'auto',
+            scrollbarWidth: 'thin',
+            scrollbarColor: '#f97316 #e5e7eb',
+            maxWidth: '100%',
+          }}
+        >
+          <div className='w-xs min-w-[300px] h-100 bg-zinc-900 rounded-4xl '></div>
+          <div className='w-xs min-w-[300px] h-100 bg-zinc-900 rounded-4xl '></div>
+          <div className='w-xs min-w-[300px] h-100 bg-zinc-900 rounded-4xl '></div>
+          <div className='w-xs min-w-[300px] h-100 bg-zinc-900 rounded-4xl '></div>
+          <div className='w-xs min-w-[300px] h-100 bg-zinc-900 rounded-4xl '></div>
+          <div className='w-xs min-w-[300px] h-100 bg-zinc-900 rounded-4xl '></div>
+          <div className='w-xs min-w-[300px] h-100 bg-zinc-900 rounded-4xl '></div>
+        </div>
+      </section>
     </div>
   );
 };
