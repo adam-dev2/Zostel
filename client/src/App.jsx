@@ -8,10 +8,76 @@ const navItems = [
   'SELECTIONS',
 ];
 
+const images = {
+  hero: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop",
+  
+  whatsNew: [
+    "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&h=600&fit=crop", 
+    "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&h=600&fit=crop", 
+    "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=800&h=600&fit=crop", 
+    "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&h=600&fit=crop", 
+    "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&h=600&fit=crop",
+  ],
+  
+  destinations: [
+    "https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=800&h=600&fit=crop", 
+    "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=800&h=600&fit=crop", 
+    "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=800&h=600&fit=crop", 
+    "https://images.unsplash.com/photo-1609920658906-8223bd289001?w=800&h=600&fit=crop", 
+    "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop", 
+    "https://images.unsplash.com/photo-1568849676085-51415703900f?w=800&h=600&fit=crop", 
+    "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&h=600&fit=crop", 
+  ],
+  dest: [
+    "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?w=800&h=600&fit=crop", 
+    "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800&h=600&fit=crop", 
+    "https://images.unsplash.com/photo-1548013146-72479768bada?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1586500036706-41963de4a5b2?w=800&h=600&fit=crop", 
+    "https://images.unsplash.com/photo-1548013146-72479768bada?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1587135941948-670b381f08ce?w=800&h=600&fit=crop",
+  ],
+  
+  explore: [
+    "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1587135941948-670b381f08ce?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1548013146-72479768bada?w=800&h=600&fit=crop", 
+    "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&h=600&fit=crop", 
+    "https://images.unsplash.com/photo-1609921141835-710b7fa6e438?w=800&h=600&fit=crop",
+  ],
+
+  disc: [
+    "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=800&h=600&fit=crop", 
+    "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1548013146-72479768bada?w=800&h=600&fit=crop", 
+    "https://images.unsplash.com/photo-1586500036706-41963de4a5b2?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1566552881560-0be862a7c445?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop", 
+    "https://images.unsplash.com/photo-1587135941948-670b381f08ce?w=800&h=600&fit=crop",
+  ],
+  
+  discover: [
+    "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=800&h=600&fit=crop", 
+    "https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=800&h=600&fit=crop", 
+    "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&h=600&fit=crop", 
+    "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&h=600&fit=crop",
+  ]
+};
+
 const App = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <header className="flex justify-between items-center px-8 py-4 bg-white shadow">
+      <header className="flex justify-between items-center px-8 py-4 bg-white shadow border-b-1 border-gray-400">
         <p className="font-bold text-3xl text-orange-600">Trip Thrill</p>
         <input
           className="border border-gray-300 focus:border-orange-500 px-4 py-2 rounded-xl outline-none transition"
@@ -28,9 +94,15 @@ const App = () => {
         </div>
       </header>
 
-      <section className="relative flex flex-col items-center justify-center h-[60vh] bg-zinc-900">
+      <section
+        className="relative flex flex-col items-center justify-center h-[60vh]"
+        style={{
+          backgroundImage: `url(${images.hero})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <h1 className="text-white text-6xl font-extrabold mb-4">Live it Now</h1>
-    
         <div className="absolute bottom-[-4rem] left-1/2 transform -translate-x-1/2 bg-white max-w-4xl w-full rounded-2xl shadow-xl border border-gray-200">
           <nav className="flex justify-around gap-2 border-b border-gray-200 p-4">
             {navItems.map((item) => (
@@ -43,27 +115,16 @@ const App = () => {
             ))}
           </nav>
           <div className="p-6 flex flex-wrap gap-4 items-center justify-between">
-            <input
-              type="text"
-              placeholder="eg: Jaipur, Taj Mahal etc.."
-              className="border border-gray-300 rounded-xl px-4 py-2 flex-1 min-w-[300px] outline-none focus:border-orange-500 transition"
-            />
-            <input
-              type="date"
-              placeholder="Check in"
-              className="border border-gray-300 rounded-xl px-4 py-2 flex-1 min-w-[140px] outline-none focus:border-orange-500 transition"
-            />
-            <input
-              type="date"
-              placeholder="Check out"
-              className="border border-gray-300 rounded-xl px-4 py-2 flex-1 min-w-[140px] outline-none focus:border-orange-500 transition"
-            />
+            <input type="text" placeholder="eg: Jaipur, Taj Mahal etc.." className="border border-gray-300 rounded-xl px-4 py-2 flex-1 min-w-[300px] outline-none focus:border-orange-500 transition" />
+            <input type="date" className="border border-gray-300 rounded-xl px-4 py-2 flex-1 min-w-[140px] outline-none focus:border-orange-500 transition" />
+            <input type="date" className="border border-gray-300 rounded-xl px-4 py-2 flex-1 min-w-[140px] outline-none focus:border-orange-500 transition" />
             <button className="bg-orange-500 rounded-2xl text-white px-6 py-2 text-xl font-bold hover:bg-orange-600 transition">
               Search
             </button>
           </div>
         </div>
       </section>
+
       <div className="h-[8rem]" />
       <section className='max-w mx-40 m-auto h-100'>
         <div className='w-full bg-zinc-900 h-full rounded-4xl'>
@@ -71,86 +132,38 @@ const App = () => {
         </div>
       </section>
       <h1 className='text-orange-500 font-bold text-2xl ml-42 mt-10'>What's New</h1>
-      <section className='flex mt-10 max-w ml-42 mr-42'>
-        <div
-          className='flex gap-6 py-2'
-          style={{
-            overflowX: 'auto',
-            scrollbarWidth: 'thin',
-            scrollbarColor: '#f97316 #e5e7eb',
-            maxWidth: '100%',
-          }}
-        >
-          <div className='w-xs min-w-[300px] h-100 bg-zinc-900 rounded-4xl '></div>
-          <div className='w-xs min-w-[300px] h-100 bg-zinc-900 rounded-4xl '></div>
-          <div className='w-xs min-w-[300px] h-100 bg-zinc-900 rounded-4xl '></div>
-          <div className='w-xs min-w-[300px] h-100 bg-zinc-900 rounded-4xl '></div>
-          <div className='w-xs min-w-[300px] h-100 bg-zinc-900 rounded-4xl '></div>
-          <div className='w-xs min-w-[300px] h-100 bg-zinc-900 rounded-4xl '></div>
-          <div className='w-xs min-w-[300px] h-100 bg-zinc-900 rounded-4xl '></div>
+      <section className="flex mt-10 ml-42 mr-42">
+        <div className="flex gap-6 py-2 overflow-x-auto" style={{ scrollbarWidth: "thin", scrollbarColor: "#f97316 #e5e7eb" }}>
+          {images.whatsNew.map((url, i) => (
+            <div key={i} className="w-xs min-w-[300px] h-100 rounded-4xl" style={{ backgroundImage: `url(${url})`, backgroundSize: "cover", backgroundPosition: "center" }}></div>
+          ))}
+        </div>
+      </section>
+      
+
+      <h1 className='text-orange-500 font-bold text-2xl ml-42 mt-10'>Destinations</h1>
+      <section className="flex mt-10 ml-42 mr-42">
+        <div className="flex gap-6 py-2 overflow-x-auto" style={{ scrollbarWidth: "thin", scrollbarColor: "#f97316 #e5e7eb" }}>
+          {images.destinations.map((url, i) => (
+            <div key={i} className="w-xs min-w-[200px] h-80 rounded-full" style={{ backgroundImage: `url(${url})`, backgroundSize: "cover", backgroundPosition: "center" }}></div>
+          ))}
         </div>
       </section>
 
-      <h1 className='text-orange-500 font-bold text-2xl ml-42 mt-10'>Destinations</h1>
-      <section className='flex mt-10 max-w ml-42 mr-42'>
-        <div
-          className='flex gap-6 py-2'
-          style={{
-            overflowX: 'auto',
-            scrollbarWidth: 'thin',
-            scrollbarColor: '#f97316 #e5e7eb',
-            maxWidth: '100%',
-          }}
-        >
-          <div className='w-xs min-w-[200px] h-80 bg-zinc-900 rounded-full '></div>
-          <div className='w-xs min-w-[200px] h-80 bg-zinc-900 rounded-full '></div>
-          <div className='w-xs min-w-[200px] h-80 bg-zinc-900 rounded-full '></div>
-          <div className='w-xs min-w-[200px] h-80 bg-zinc-900 rounded-full '></div>
-          <div className='w-xs min-w-[200px] h-80 bg-zinc-900 rounded-full '></div>
-          <div className='w-xs min-w-[200px] h-80 bg-zinc-900 rounded-full '></div>
-          <div className='w-xs min-w-[200px] h-80 bg-zinc-900 rounded-full '></div>
-          <div className='w-xs min-w-[200px] h-80 bg-zinc-900 rounded-full '></div>
-        </div>
-      </section>
-      <section className='flex mt-10 max-w ml-42 mr-42'>
-        <div
-          className='flex gap-6 py-2'
-          style={{
-            overflowX: 'auto',
-            scrollbarWidth: 'thin',
-            scrollbarColor: '#f97316 #e5e7eb',
-            maxWidth: '100%',
-          }}
-        >
-          <div className='w-xs min-w-[200px] h-80 bg-zinc-900 rounded-full '></div>
-          <div className='w-xs min-w-[200px] h-80 bg-zinc-900 rounded-full '></div>
-          <div className='w-xs min-w-[200px] h-80 bg-zinc-900 rounded-full '></div>
-          <div className='w-xs min-w-[200px] h-80 bg-zinc-900 rounded-full '></div>
-          <div className='w-xs min-w-[200px] h-80 bg-zinc-900 rounded-full '></div>
-          <div className='w-xs min-w-[200px] h-80 bg-zinc-900 rounded-full '></div>
-          <div className='w-xs min-w-[200px] h-80 bg-zinc-900 rounded-full '></div>
-          <div className='w-xs min-w-[200px] h-80 bg-zinc-900 rounded-full '></div>
+      <section className="flex mt-10 ml-42 mr-42">
+        <div className="flex gap-6 py-2 overflow-x-auto" style={{ scrollbarWidth: "thin", scrollbarColor: "#f97316 #e5e7eb" }}>
+          {images.dest.map((url, i) => (
+            <div key={i} className="w-xs min-w-[200px] h-80 rounded-full" style={{ backgroundImage: `url(${url})`, backgroundSize: "cover", backgroundPosition: "center" }}></div>
+          ))}
         </div>
       </section>
 
       <h1 className='text-orange-500 font-bold text-4xl ml-42 mt-10'>Explore with Trip Thrills</h1>
-      <section className='flex mt-10 max-w ml-42 mr-42'>
-        <div
-          className='flex gap-6 py-2'
-          style={{
-            overflowX: 'auto',
-            scrollbarWidth: 'thin',
-            scrollbarColor: '#f97316 #e5e7eb',
-            maxWidth: '100%',
-          }}
-        >
-          <div className='w-xs min-w-[300px] h-100 bg-zinc-900 rounded-4xl '></div>
-          <div className='w-xs min-w-[300px] h-100 bg-zinc-900 rounded-4xl '></div>
-          <div className='w-xs min-w-[300px] h-100 bg-zinc-900 rounded-4xl '></div>
-          <div className='w-xs min-w-[300px] h-100 bg-zinc-900 rounded-4xl '></div>
-          <div className='w-xs min-w-[300px] h-100 bg-zinc-900 rounded-4xl '></div>
-          <div className='w-xs min-w-[300px] h-100 bg-zinc-900 rounded-4xl '></div>
-          <div className='w-xs min-w-[300px] h-100 bg-zinc-900 rounded-4xl '></div>
+      <section className="flex mt-10 ml-42 mr-42">
+        <div className="flex gap-6 py-2 overflow-x-auto" style={{ scrollbarWidth: "thin", scrollbarColor: "#f97316 #e5e7eb" }}>
+          {images.explore.map((url, i) => (
+            <div key={i} className="w-xs min-w-[300px] h-100 rounded-4xl" style={{ backgroundImage: `url(${url})`, backgroundSize: "cover", backgroundPosition: "center" }}></div>
+          ))}
         </div>
       </section>
 
@@ -164,53 +177,44 @@ const App = () => {
               <button className='hover:border-1 bg-zinc-200 font-semibold p-4 rounded-full cursor-pointer'>Trips</button>
             </div>
           </div>
-          <section className='flex mt-10 max-w ml-42 mr-42'>
-            <div
-              className='flex gap-6 py-2'
-              style={{
-                overflowX: 'auto',
-                scrollbarWidth: 'thin',
-                scrollbarColor: '#f97316 #e5e7eb',
-                maxWidth: '100%',
-              }}
-            >
-              <div className='w-xs min-w-[300px] h-80 bg-zinc-900 rounded-4xl '></div>
-              <div className='w-xs min-w-[300px] h-80 bg-zinc-900 rounded-4xl '></div>
-              <div className='w-xs min-w-[300px] h-80 bg-zinc-900 rounded-4xl '></div>
-              <div className='w-xs min-w-[300px] h-80 bg-zinc-900 rounded-4xl '></div>
-              <div className='w-xs min-w-[300px] h-80 bg-zinc-900 rounded-4xl '></div>
-              <div className='w-xs min-w-[300px] h-80 bg-zinc-900 rounded-4xl '></div>
-              <div className='w-xs min-w-[300px] h-80 bg-zinc-900 rounded-4xl '></div>
-            </div>
+          <section>
+            <section className="flex mt-10 ml-42 mr-42">
+              <div className="flex gap-6 py-2 overflow-x-auto" style={{ scrollbarWidth: "thin", scrollbarColor: "#f97316 #e5e7eb" }}>
+                {images.discover.map((url, i) => (
+                  <div key={i} className="w-xs min-w-[300px] h-80 rounded-4xl" style={{ backgroundImage: `url(${url})`, backgroundSize: "cover", backgroundPosition: "center" }}></div>
+                ))}
+              </div>
+            </section>
           </section>
-          <section className='flex mt-10 max-w ml-42 mr-42'>
-            <div
-              className='flex gap-6 py-2'
-              style={{
-                overflowX: 'auto',
-                scrollbarWidth: 'thin',
-                scrollbarColor: '#f97316 #e5e7eb',
-                maxWidth: '100%',
-              }}
-            >
-              <div className='w-xs min-w-[300px] h-80 bg-zinc-900 rounded-4xl '></div>
-              <div className='w-xs min-w-[300px] h-80 bg-zinc-900 rounded-4xl '></div>
-              <div className='w-xs min-w-[300px] h-80 bg-zinc-900 rounded-4xl '></div>
-              <div className='w-xs min-w-[300px] h-80 bg-zinc-900 rounded-4xl '></div>
-              <div className='w-xs min-w-[300px] h-80 bg-zinc-900 rounded-4xl '></div>
-              <div className='w-xs min-w-[300px] h-80 bg-zinc-900 rounded-4xl '></div>
-              <div className='w-xs min-w-[300px] h-80 bg-zinc-900 rounded-4xl '></div>
-            </div> 
+          <section>
+            <section className="flex mt-10 ml-42 mr-42">
+              <div className="flex gap-6 py-2 overflow-x-auto" style={{ scrollbarWidth: "thin", scrollbarColor: "#f97316 #e5e7eb" }}>
+                {images.disc.map((url, i) => (
+                  <div key={i} className="w-xs min-w-[300px] h-80 rounded-4xl" style={{ backgroundImage: `url(${url})`, backgroundSize: "cover", backgroundPosition: "center" }}></div>
+                ))}
+              </div>
+            </section>
           </section>
         </section>
         <div className='max-w-xl m-auto flex justify-center items-center py-10 mt-5'>
           <button className='border-1 p-4 bg-zinc-200 rounded-full font-semibold'>Explore Trip Thrill </button>
         </div>
+
         <section className='max-w mx-40 m-auto h-100 mt-10'>
-          <div className='w-full bg-zinc-900 h-full rounded-4xl'>
-            
+          <div className='w-full bg-zinc-200 h-full rounded-4xl shadow-2xl p-12'>
+            <h1 className='text-zinc-900 font-bold text-7xl max-w-3xl text-wrap'>There's Wanderlust in Our Newsletters!</h1>
+            <p className='mt-6 max-w-xl text-wrap text-xl font-light'>Be the FIRST to Catch the Vibes! Sign up for inspiring travel tales, insider tips, and irresistible trip plans-straight from Trip Thrills to your inbox.</p>
+            <div className='flex mt-8 max-w-xs justify-between'>
+              <input
+                className="border border-gray-300 focus:border-orange-500 px-4 py-2 rounded-xl outline-none transition"
+                type="email"
+                placeholder="Enter email"
+              />
+              <button className='bg-orange-500 px-4 py-2 rounded-full cursor-pointer text-white hover:bg-orange-600 shadow-2xl'>Subscribe</button>
+            </div>
           </div>
         </section>
+
           <footer className="bg-zinc-900 text-white mt-16 py-10 px-8">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-10">
               <div>
